@@ -1,11 +1,15 @@
 use student_management
 
-select * from subjects where credit = (select max(credit) from subjects);
+select sub_id, sub_name, credit, status_sub
+from subjects
+group by sub_id, sub_name, credit, status_sub
+having credit = (select max(credit) from subjects);
 
-select subjects.* 
+select subjects.sub_id, subjects.sub_name, subjects.credit, subjects.status_sub
 from subjects
 join mark on subjects.sub_id = mark.sub_id
-where mark.mark = (select max(mark) from mark);
+group by subjects.sub_id, subjects.sub_name, subjects.credit, subjects.status_sub
+having max(mark) = (select max(mark) from mark);
 
 select 
     students.student_id, 
