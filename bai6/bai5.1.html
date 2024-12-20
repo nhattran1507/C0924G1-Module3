@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay Đổi Màu Sắc Văn Bản</title>
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal styles */
+        .internal-style {
+            color: blue;
+        }
+    </style>
 </head>
 <body>
-$END$
+<!-- Phần 1: Inline-style -->
+<h1 style="color: red;">Phần 1: Inline-style</h1>
+<p style="color: red;">Đây là nội dung có màu được thay đổi bằng inline-style.</p>
+
+<!-- Phần 2: Internal-style -->
+<h1 class="internal-style">Phần 2: Internal-style</h1>
+<p class="internal-style">Đây là nội dung có màu được thay đổi bằng internal-style.</p>
+
+<!-- Phần 3: External-style -->
+<h1 class="external-style">Phần 3: External-style</h1>
+<p class="external-style">Đây là nội dung có màu được thay đổi bằng external-style.</p>
 </body>
 </html>
