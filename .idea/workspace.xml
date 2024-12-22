@@ -1,22 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8f8ce443-0e13-4fec-a705-9343b9288202" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bai5/bai5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai5/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai5/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai7/THIẾT KẾ BỐ CỤC TRANG WEB.pptx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai7/bai7.1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai7/cartoon-styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai7/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai7/webhoathinh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai6/bai5.2.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai6/bai5.2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai6/vietnam_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/bai6/vietnam-styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "nhattran1507"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/nhattran1507/C0924G1-Module3.git",
+    "accountId": "dd20d20b-db2f-4932-9be2-d08b92435308"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2qQRgIGwYMjYWWO9qxkSwVTJkVR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -24,10 +53,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.bai5.2.html.executor": "Run",
+    "JavaScript Debug.webhoathinh.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Codegym/module3",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -36,6 +71,33 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="JavaScript Debug.webhoathinh.html">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="module3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="module3" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bai5.2.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/module3/bai6/bai5.2.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="webhoathinh.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/module3/bai7/webhoathinh.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.webhoathinh.html" />
+        <item itemvalue="JavaScript Debug.bai5.2.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -52,6 +114,15 @@
       <option name="presentableId" value="Default" />
       <updated>1734592921289</updated>
       <workItem from="1734592922447" duration="394000" />
+      <workItem from="1734656156895" duration="31000" />
+      <workItem from="1734656193833" duration="35000" />
+      <workItem from="1734656253442" duration="57000" />
+      <workItem from="1734656317184" duration="191000" />
+      <workItem from="1734656797739" duration="55000" />
+      <workItem from="1734657101727" duration="579000" />
+      <workItem from="1734658338549" duration="594000" />
+      <workItem from="1734720121258" duration="90000" />
+      <workItem from="1734860554989" duration="618000" />
     </task>
     <servers />
   </component>
