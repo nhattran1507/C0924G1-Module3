@@ -2,102 +2,81 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f9f9f9;
 }
 
 header {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.head-link {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+header img {
+    height: 40px;
 }
 
-.head-link a {
-    color: #fff;
-    margin: 0 15px;
+nav a {
     text-decoration: none;
+    margin: 0 10px;
+    color: #333;
     font-weight: bold;
 }
 
-.head-link a:hover {
-    color: #f90;
+nav a:hover {
+    color: #ff5722;
 }
 
 .container {
     display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
+    margin: 20px;
 }
 
 .left-content {
     flex: 1;
-    max-width: 300px;
     margin-right: 20px;
-}
-
-.video-item {
-    margin-bottom: 20px;
-}
-
-.video-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.video-item p {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 5px 0;
-}
-
-.video-item span {
-    font-size: 14px;
-    color: #555;
 }
 
 .right-content {
     flex: 2;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
 }
 
-.right-content h2 {
-    font-size: 20px;
+.video-item {
+    display: flex;
     margin-bottom: 15px;
 }
 
-.right-content iframe {
-    width: 100%;
-    height: 300px;
-    margin-bottom: 15px;
+.video-item img {
+    width: 100px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.video-item div {
+    font-size: 14px;
+}
+
+.video-item div a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.video-item div a:hover {
+    text-decoration: underline;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
     text-align: center;
     padding: 10px;
-    margin-top: 20px;
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .left-content {
-        max-width: 100%;
-        margin-right: 0;
-    }
-
-    .right-content iframe {
-        height: 200px;
-    }
+    background-color: #fff;
+    border-top: 2px solid #ddd;
+    font-size: 14px;
 }

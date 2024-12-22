@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f8ce443-0e13-4fec-a705-9343b9288202" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai7/THIẾT KẾ BỐ CỤC TRANG WEB.pptx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai7/bai7.1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai7/cartoon-styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai7/styles.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/bai7/webhoathinh.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai6/bai5.2.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai6/bai5.2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai6/vietnam_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/bai6/vietnam-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai7/cartoon-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/bai7/cartoon-styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -122,7 +116,7 @@
       <workItem from="1734657101727" duration="579000" />
       <workItem from="1734658338549" duration="594000" />
       <workItem from="1734720121258" duration="90000" />
-      <workItem from="1734860554989" duration="618000" />
+      <workItem from="1734860554989" duration="1869000" />
     </task>
     <servers />
   </component>
