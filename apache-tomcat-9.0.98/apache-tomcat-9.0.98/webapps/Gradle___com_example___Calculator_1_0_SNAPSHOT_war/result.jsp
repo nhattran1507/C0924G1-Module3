@@ -7,16 +7,21 @@
 <body>
 <h2>Calculation Result</h2>
 <%
-    String result = (String) request.getAttribute("result");
+    Object resultObj = request.getAttribute("result");
+    String result = resultObj != null ? resultObj.toString() : null;
     String error = (String) request.getAttribute("error");
 
     if (error != null) {
 %>
 <p style="color: red;"><%= error %></p>
 <%
-} else {
+} else if (result != null) {
 %>
 <p>Result: <%= result %></p>
+<%
+} else {
+%>
+<p>No calculation was performed.</p>
 <%
     }
 %>

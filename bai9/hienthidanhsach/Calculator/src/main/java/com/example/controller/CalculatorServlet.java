@@ -21,7 +21,7 @@ public class CalculatorServlet extends HttpServlet {
             double num2 = Double.parseDouble(num2Str);
 
             double result = Calculator.calculate(num1, num2, operation);
-            request.setAttribute("result", result);
+            request.setAttribute("result", String.valueOf(result));
         } catch (ArithmeticException e) {
             request.setAttribute("error", "Error: " + e.getMessage());
         } catch (Exception e) {
