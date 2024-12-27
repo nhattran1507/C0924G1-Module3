@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f8ce443-0e13-4fec-a705-9343b9288202" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bai8/baitap/src/main/java/DiscountServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai8/gfa.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai8/simple_login/src/main/java/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai8/ád.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy/casestudy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai8/baitap/src/main/java/DiscountCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai8/baitap/src/main/java/InputValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai7/cartoon-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/bai7/cartoon-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai7/webhoathinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai7/webhoathinh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-9.0.98/apache-tomcat-9.0.98/webapps/nhatdeptrai/WEB-INF/classes/DiscountServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/apache-tomcat-9.0.98/apache-tomcat-9.0.98/webapps/nhatdeptrai/WEB-INF/classes/DiscountServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apache-tomcat-9.0.98/apache-tomcat-9.0.98/webapps/nhatdeptrai/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/apache-tomcat-9.0.98/apache-tomcat-9.0.98/webapps/nhatdeptrai/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai8/baitap/src/main/java/DiscountServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/bai8/baitap/src/main/java/DiscountServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai8/baitap/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/bai8/baitap/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy/casestudy.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,32 +51,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.bai5.2.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.landingpage.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.sd.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.suface.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.vidu.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.webhoathinh.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.ád.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Codegym/module3&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.bai5.2.html.executor": "Run",
+    "JavaScript Debug.landing page.html.executor": "Run",
+    "JavaScript Debug.landingpage.html.executor": "Run",
+    "JavaScript Debug.sd.html.executor": "Run",
+    "JavaScript Debug.suface.html.executor": "Run",
+    "JavaScript Debug.vidu.html.executor": "Run",
+    "JavaScript Debug.webhoathinh.html.executor": "Run",
+    "JavaScript Debug.ád.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Codegym/module3",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="JavaScript Debug.ád.html">
+}]]></component>
+  <component name="RunManager" selected="JavaScript Debug.landing page.html">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="module3" />
       <method v="2">
@@ -90,6 +91,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="landing page.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/module3/casestudy/landing page.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="landingpage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/module3/bai8/landingpage.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -99,19 +103,16 @@
     <configuration name="suface.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/module3/bai8/suface.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="vidu.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/module3/bai8/vidu.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
     <configuration name="ád.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/module3/bai8/ád.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.landing page.html" />
         <item itemvalue="JavaScript Debug.ád.html" />
         <item itemvalue="JavaScript Debug.sd.html" />
         <item itemvalue="JavaScript Debug.suface.html" />
         <item itemvalue="JavaScript Debug.landingpage.html" />
-        <item itemvalue="JavaScript Debug.vidu.html" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +145,7 @@
       <workItem from="1734981185431" duration="8673000" />
       <workItem from="1735004298615" duration="2063000" />
       <workItem from="1735022649436" duration="84000" />
-      <workItem from="1735088199945" duration="275000" />
+      <workItem from="1735088199945" duration="2673000" />
     </task>
     <servers />
   </component>

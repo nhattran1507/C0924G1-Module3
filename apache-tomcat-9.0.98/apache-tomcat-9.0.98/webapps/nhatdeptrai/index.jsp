@@ -3,7 +3,6 @@
 <html>
 <head>
   <title>Product Discount Calculator</title>
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -28,11 +27,33 @@
         </div>
         <button type="submit" class="btn btn-primary w-100">Calculate Discount</button>
       </form>
+
+      <!-- Hiển thị lỗi nếu có -->
+      <%
+        String errorMessage = (String) request.getAttribute("errorMessage");
+        if (errorMessage != null && !errorMessage.isEmpty()) {
+      %>
+      <div class="alert alert-danger mt-3">
+        <%= errorMessage %>
+      </div>
+      <% } %>
+
+      <!-- Hiển thị kết quả nếu có -->
+      <%
+        Double discountPrice = (Double) request.getAttribute("discountPrice");
+        if (discountPrice != null) {
+      %>
+      <div class="alert alert-success mt-3">
+        <p><strong>Product Description:</strong> <%= request.getAttribute("productDescription") %></p>
+        <p><strong>List Price:</strong> $<%= request.getAttribute("listPrice") %></p>
+        <p><strong>Discount Percent:</strong> <%= request.getAttribute("discountPercent") %>%</p>
+        <p><strong>Discount Amount:</strong> $<%= request.getAttribute("discountAmount") %></p>
+        <p><strong>Discount Price:</strong> $<%= request.getAttribute("discountPrice") %></p>
+      </div>
+      <% } %>
     </div>
   </div>
 </div>
-<!-- Bootstrap JS (optional, for interactive components) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
