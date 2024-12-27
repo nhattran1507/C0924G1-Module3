@@ -35,13 +35,13 @@
         </tr>
         </thead>
         <tbody>
-        <c:forEach var="customer" items="${customers}">
+        <c:forEach var="customer" items="${customerList}">
             <tr>
-                <td>${customer.name}</td>
-                <td>${customer.birthDate}</td>
-                <td>${customer.address}</td>
+                <td>${customer.getName}</td>
+                <td>${customer.getBirthDate}</td>
+                <td>${customer.getAddress}</td>
                 <td>
-                    <img src="${customer.image}" alt="${customer.name}" class="img-fluid rounded" style="max-width: 100px; height: auto;">
+                    <img src="${customer.getImage}" alt="${customer.getName}" class="img-fluid rounded" style="max-width: 100px; height: auto;">
                 </td>
             </tr>
         </c:forEach>
