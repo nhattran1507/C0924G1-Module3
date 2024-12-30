@@ -1,10 +1,7 @@
 package com.example.controller;
 
 import com.example.entity.Product;
-import com.example.service.IService;
 import com.example.service.impl.ProductService;
-
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

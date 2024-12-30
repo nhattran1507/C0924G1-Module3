@@ -1,32 +1,27 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: PC
-  Date: 12/27/2024
-  Time: 9:01 AM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ include file="/WEB-INF/view/utils/bootstrap.jsp" %>
+<%@ include file="/WEB-INF/view/utils/navbar.jsp" %>
 <html>
 <head>
-    <title>Title</title>
+  <title>Cập nhật sản phẩm</title>
 </head>
 <body>
-<div class="container mt-4">
-  <h1>Cập nhật sản phẩm</h1>
-  <form action="/product" method="post">
-    <input type="hidden" name="action" value="update">
+<div class="container mt-5">
+  <h2>Cập nhật sản phẩm</h2>
+  <form method="post" action="/product?action=update">
     <input type="hidden" name="id" value="${product.id}">
-    <div class="mb-3">
-      <label for="name" class="form-label">Tên sản phẩm</label>
+    <div class="form-group">
+      <label for="name">Tên sản phẩm:</label>
       <input type="text" class="form-control" id="name" name="name" value="${product.name}" required>
     </div>
-    <div class="mb-3">
-      <label for="price" class="form-label">Giá sản phẩm</label>
-      <input type="number" class="form-control" id="price" name="price" value="${product.price}" step="0.01" required>
+    <div class="form-group">
+      <label for="price">Giá:</label>
+      <input type="number" class="form-control" id="price" name="price" step="0.01" value="${product.price}" required>
     </div>
-    <div class="mb-3">
-      <label for="description" class="form-label">Mô tả</label>
-      <textarea class="form-control" id="description" name="description" rows="3" required>${product.description}</textarea>
+    <div class="form-group">
+      <label for="description">Mô tả:</label>
+      <textarea class="form-control" id="description" name="description" required>${product.description}</textarea>
     </div>
     <button type="submit" class="btn btn-primary">Cập nhật</button>
   </form>
