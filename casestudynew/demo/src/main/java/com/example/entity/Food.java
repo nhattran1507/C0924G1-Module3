@@ -2,30 +2,38 @@ package com.example.entity;
 
 import java.util.Objects;
 
-public class Menu {
-    private int id;
+public class Food {
+    private int food_id;
+    private int restaurant_id;
     private String food_name;
     private String food_description;
     private double food_price;
-    private String food_image;
 
-    public Menu() {
+    public Food() {
     }
 
-    public Menu(int id, String food_name, String food_description, double food_price, String food_image) {
-        this.id = id;
+    public Food(int food_id, int restaurant_id, String food_name, String food_description, double food_price) {
+        this.food_id = food_id;
+        this.restaurant_id = restaurant_id;
         this.food_name = food_name;
         this.food_description = food_description;
         this.food_price = food_price;
-        this.food_image = food_image;
     }
 
-    public int getId() {
-        return id;
+    public int getFood_id() {
+        return food_id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setFood_id(int food_id) {
+        this.food_id = food_id;
+    }
+
+    public int getRestaurant_id() {
+        return restaurant_id;
+    }
+
+    public void setRestaurant_id(int restaurant_id) {
+        this.restaurant_id = restaurant_id;
     }
 
     public String getFood_name() {
@@ -52,34 +60,26 @@ public class Menu {
         this.food_price = food_price;
     }
 
-    public String getFood_image() {
-        return food_image;
-    }
-
-    public void setFood_image(String food_image) {
-        this.food_image = food_image;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Menu menu = (Menu) o;
-        return id == menu.id && Objects.equals(food_name, menu.food_name);
+        Food menu = (Food) o;
+        return food_id == menu.food_id && Objects.equals(food_name, menu.food_name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, food_name);
+        return Objects.hash(food_id, food_name);
     }
 
     @Override
     public String toString() {
         return "menu{" +
-                "id" + id +
+                "food_id" + food_id +
+                "restaurant_id" + restaurant_id +
                 "food_name" + food_name +
                 "food_description" + food_description +
-                "food_price" + food_price +
-                "food_image" +food_image +"}";
+                "food_price" + food_price + "}";
     }
 }
