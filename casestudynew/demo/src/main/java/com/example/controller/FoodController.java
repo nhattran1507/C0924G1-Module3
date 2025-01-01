@@ -111,37 +111,75 @@ public class FoodController extends HttpServlet {
         req.getRequestDispatcher("/WEB-INF/view/food/list.jsp").forward(req, resp);
     }
 
-    private void handleCreate(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    private void handleCreate(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String name = req.getParameter("name");
+        String description = req.getParameter("description");
+        String priceStr = req.getParameter("price");
+        String restaurantIdStr = req.getParameter("restaurantId");
+
         try {
-            String name = req.getParameter("name");
-            String description = req.getParameter("description");
-            double price = Double.parseDouble(req.getParameter("price"));
-            int restaurantId = Integer.parseInt(req.getParameter("restaurantId"));
+            double price = Double.parseDouble(priceStr);
+            int restaurantId = Integer.parseInt(restaurantIdStr);
+
+            if (price <= 0) {
+                req.setAttribute("error", "Price must be a positive number. Please enter a valid price.");
+                req.setAttribute("name", name);
+                req.setAttribute("description", description);
+                req.setAttribute("price", priceStr);
+                req.setAttribute("restaurants", restaurantService.getAll());
+                req.getRequestDispatcher("/WEB-INF/view/food/create.jsp").forward(req, resp);
+                return;
+            }
+
             Food newFood = new Food(0, restaurantId, name, description, price);
             foodService.save(newFood);
             redirectWithMessage(resp, CREATE_SUCCESS);
+
         } catch (NumberFormatException e) {
-            redirectWithMessage(resp, "Invalid data");
+            req.setAttribute("error", "Invalid format for price. Please enter a valid number (e.g., 12.34).");
+            req.setAttribute("name", name);
+            req.setAttribute("description", description);
+            req.setAttribute("price", priceStr);
+            req.setAttribute("restaurants", restaurantService.getAll());
+            req.getRequestDispatcher("/WEB-INF/view/food/create.jsp").forward(req, resp);
         }
     }
 
-    private void handleUpdate(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    private void handleUpdate(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String idStr = req.getParameter("id");
+        String name = req.getParameter("name");
+        String description = req.getParameter("description");
+        String priceStr = req.getParameter("price");
+        String restaurantIdStr = req.getParameter("restaurantId");
+
         try {
-            int id = Integer.parseInt(req.getParameter("id"));
-            String name = req.getParameter("name");
-            String description = req.getParameter("description");
-            double price = Double.parseDouble(req.getParameter("price"));
-            int restaurantId = Integer.parseInt(req.getParameter("restaurantId"));
+            int id = Integer.parseInt(idStr);
+            double price = Double.parseDouble(priceStr);
+            int restaurantId = Integer.parseInt(restaurantIdStr);
+
+            if (price <= 0) {
+                req.setAttribute("error", "Price must be a positive number. Please enter a valid price.");
+                req.setAttribute("food", new Food(id, restaurantId, name, description, price));
+                req.setAttribute("restaurants", restaurantService.getAll());
+                req.getRequestDispatcher("/WEB-INF/view/food/update.jsp").forward(req, resp);
+                return;
+            }
+
             Food updatedFood = new Food(id, restaurantId, name, description, price);
             if (foodService.update(updatedFood)) {
                 redirectWithMessage(resp, "Food updated successfully.");
             } else {
                 redirectWithMessage(resp, NOT_FOUND);
             }
+
         } catch (NumberFormatException e) {
-            redirectWithMessage(resp, "Invalid data");
+            req.setAttribute("error", "Invalid format for price. Please enter a valid number (e.g., 12.34).");
+            req.setAttribute("food", new Food(0, 0, name, description, 0.0)); // Dummy food for retry
+            req.setAttribute("restaurants", restaurantService.getAll());
+            req.getRequestDispatcher("/WEB-INF/view/food/update.jsp").forward(req, resp);
         }
     }
+
 
     private void redirectWithMessage(HttpServletResponse resp, String message) throws IOException {
         resp.sendRedirect("/food?" + MESSAGE + "=" + message);
